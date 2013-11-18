@@ -1,3 +1,7 @@
+*.iml
+local.properties
+atlassian-ide-plugin.xml
 out
+target/
 .idea
 gen

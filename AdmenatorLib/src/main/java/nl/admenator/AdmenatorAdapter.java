@@ -30,8 +30,9 @@ public class AdmenatorAdapter extends BaseAdapter implements WrapperListAdapter 
 
     @Override
     public int getItemViewType(int position) {
-        if (pattern.insertForIndex(position))
+        if (pattern.insertForIndex(position)) {
             return super.getViewTypeCount();
+        }
         return super.getItemViewType(position);
     }
 
