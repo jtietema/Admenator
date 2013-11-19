@@ -51,7 +51,7 @@ public class AdmenatorAdapter extends BaseAdapter implements WrapperListAdapter 
     @Override
     public long getItemId(int i) {
         if (pattern.insertForIndex(i))
-            return 0;
+            return -1L;
         return wrappedAdapter.getItemId(i - getOffsetForIndex(i));
     }
 
